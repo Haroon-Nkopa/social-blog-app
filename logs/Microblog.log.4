@@ -1,0 +1,96 @@
+2025-07-14 11:31:45,580 : ERROR : Exception on /register [GET] [in C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py : 875]
+Traceback (most recent call last):
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\routes.py", line 79, in register
+    return render_template('register.html', form=form)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\templates\register.html", line 2, in top-level template code
+    {% import 'bootstrap_wtf.html' as wtf %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\templates\bootstrap_wtf.html", line 73, in template
+    {% wtf.form_field(field, ns.first_field) %}
+    ^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'wtf'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2025-07-14 11:34:13,843 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-14 11:34:17,954 : ERROR : Exception on /register [GET] [in C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py : 875]
+Traceback (most recent call last):
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\routes.py", line 79, in register
+    return render_template('register.html', form=form)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\templates\register.html", line 2, in top-level template code
+    {% import 'bootstrap_wtf.html' as wtf %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\templates\bootstrap_wtf.html", line 73, in template
+    {% form_field(field, ns.first_field) %}
+    ^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'form_field'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2025-07-14 11:35:11,527 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-14 11:35:19,119 : ERROR : Exception on /register [GET] [in C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py : 875]
+Traceback (most recent call last):
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\routes.py", line 79, in register
+    return render_template('register.html', form=form)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\templates\register.html", line 2, in top-level template code
+    {% import 'bootstrap_wtf.html' as wtf %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\templates\bootstrap_wtf.html", line 74, in template
+    {% set ns.first_field='false' }
+    ^^^^^
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2025-07-14 11:35:50,948 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]

@@ -1,0 +1,80 @@
+2025-07-07 06:49:19,282 : ERROR : Exception on /reset_password_request [POST] [in C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py : 875]
+Traceback (most recent call last):
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 941, in finalize_request
+    response = self.process_response(response)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 1322, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\sessions.py", line 387, in save_session
+    val = self.get_signing_serializer(app).dumps(dict(session))  # type: ignore[union-attr]
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\itsdangerous\serializer.py", line 316, in dumps
+    payload = want_bytes(self.dump_payload(obj))
+                         ~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\itsdangerous\url_safe.py", line 56, in dump_payload
+    json = super().dump_payload(obj)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\itsdangerous\serializer.py", line 278, in dump_payload
+    return want_bytes(self.serializer.dumps(obj, **self.serializer_kwargs))
+                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\json\tag.py", line 323, in dumps
+    return dumps(self.tag(value), separators=(",", ":"))
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\json\__init__.py", line 41, in dumps
+    return current_app.json.dumps(obj, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Users\Kakashi\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Kakashi\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type User is not JSON serializable
+2025-07-07 07:06:35,257 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 07:14:50,134 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 11:24:10,890 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 11:29:30,234 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 11:35:50,211 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 11:45:35,643 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 11:49:05,581 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 11:51:21,665 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 11:51:54,378 : ERROR : Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNzUxOTE0OTAyLjk2MTAwMTZ9.hxaZ8Gv_-YdYndZRZW3-boOCxWjL6js5ek29_6aVtUk [GET] [in C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py : 875]
+Traceback (most recent call last):
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\routes.py", line 198, in reset_password
+    print(user.username)
+          ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'username'
+2025-07-07 11:53:26,546 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 11:56:59,417 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
+2025-07-07 11:57:02,779 : ERROR : Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNzUxOTE1MDI2LjMzNjY5NjF9.rk5D1n8qWQB-G6jTd1gPpM7dRTfosw78ekpzAy0C3nM [GET] [in C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py : 875]
+Traceback (most recent call last):
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Kakashi\Desktop\projects\newblog\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Kakashi\Desktop\projects\newblog\app\routes.py", line 202, in reset_password
+    form = reset_password()
+TypeError: reset_password() missing 1 required positional argument: 'token'
+2025-07-07 12:00:49,071 : INFO : Microblog StartUP [in C:\Users\Kakashi\Desktop\projects\newblog\app\__init__.py : 30]
