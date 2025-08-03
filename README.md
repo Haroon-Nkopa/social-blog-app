@@ -22,10 +22,6 @@ Tech Stack
 - SQLAlchemy (ORM for SQLite)
 - Bootstrap 4/5 (CSS framework)
 - Jinja2 (template engine)
-  
--------
-installation loacally
-
 # Clone the repository
 git clone https://github.com/Haroon-Nkopa/social-blog-app.git
 cd social-blog-app
@@ -48,6 +44,6 @@ flask db upgrade
 # Run the development server
 flask run
 
- on your browser
- localhost
+# Open your browser at
+# http://127.0.0.1:5000
 
